@@ -10,10 +10,13 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var modelData: ModelData
     
-    @State var showConfiguration = false
+    @State var showConfiguration = true
     
     var body: some View {
         ScoreView()
+            .sheet(isPresented: $showConfiguration) {
+                ConfigurationView(isPresented: $showConfiguration, initial: $modelData.initial, steps: $modelData.steps, scores: $modelData.scores, table: $modelData.table)
+            }
     }
 }
 
