@@ -11,6 +11,10 @@
 		E49C34AA269331FC00CA21BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C34A9269331FC00CA21BC /* ContentView.swift */; };
 		E49C34AC269331FD00CA21BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E49C34AB269331FD00CA21BC /* Assets.xcassets */; };
 		E49C34AF269331FD00CA21BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E49C34AE269331FD00CA21BC /* Preview Assets.xcassets */; };
+		E49C34B82693322000CA21BC /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C34B72693322000CA21BC /* View.swift */; };
+		E49C34BB2693325A00CA21BC /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C34BA2693325A00CA21BC /* ModelData.swift */; };
+		E49C34C0269332A300CA21BC /* ControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C34BF269332A300CA21BC /* ControllerView.swift */; };
+		E49C34C2269332BE00CA21BC /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C34C1269332BE00CA21BC /* ScoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		E49C34AB269331FD00CA21BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E49C34AE269331FD00CA21BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E49C34B0269331FD00CA21BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E49C34B72693322000CA21BC /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		E49C34BA2693325A00CA21BC /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		E49C34BF269332A300CA21BC /* ControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerView.swift; sourceTree = "<group>"; };
+		E49C34C1269332BE00CA21BC /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +60,10 @@
 		E49C34A6269331FC00CA21BC /* Scoreboard4 */ = {
 			isa = PBXGroup;
 			children = (
+				E49C34B62693321300CA21BC /* Utils */,
+				E49C34B92693324000CA21BC /* Models */,
+				E49C34BC2693327500CA21BC /* Views */,
 				E49C34A7269331FC00CA21BC /* Scoreboard4App.swift */,
-				E49C34A9269331FC00CA21BC /* ContentView.swift */,
 				E49C34AB269331FD00CA21BC /* Assets.xcassets */,
 				E49C34B0269331FD00CA21BC /* Info.plist */,
 				E49C34AD269331FD00CA21BC /* Preview Content */,
@@ -67,6 +77,32 @@
 				E49C34AE269331FD00CA21BC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E49C34B62693321300CA21BC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E49C34B72693322000CA21BC /* View.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E49C34B92693324000CA21BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E49C34BA2693325A00CA21BC /* ModelData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E49C34BC2693327500CA21BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E49C34BF269332A300CA21BC /* ControllerView.swift */,
+				E49C34C1269332BE00CA21BC /* ScoreView.swift */,
+				E49C34A9269331FC00CA21BC /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E49C34AA269331FC00CA21BC /* ContentView.swift in Sources */,
+				E49C34BB2693325A00CA21BC /* ModelData.swift in Sources */,
 				E49C34A8269331FC00CA21BC /* Scoreboard4App.swift in Sources */,
+				E49C34B82693322000CA21BC /* View.swift in Sources */,
+				E49C34C0269332A300CA21BC /* ControllerView.swift in Sources */,
+				E49C34C2269332BE00CA21BC /* ScoreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
